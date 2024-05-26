@@ -1,0 +1,51 @@
+
+.main-create{
+    padding: 50px 0 60px;
+    text-align: center;
+}
+h3{
+    font-size: 24px;
+}
+.form-create{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.button-create{
+    cursor: pointer;
+    margin-bottom: 100px;
+    width: 165px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    background-color: #1D2327;
+    color: #ffffff;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-radius: 23.5px;
+    transition: all 0.3s ease 0s;
+    outline: none;
+    border: none;
+}
+.button-create:hover{
+    background-color: #2a3941;
+}
+  
+#createForm{
+    display: flex;
+    flex-direction: column;
+gap: 20px;
+
+}
+input,textarea{
+    padding: 10px;
+    outline-color: #1D2327;
+border-radius: 10px;
+border: 1px solid #1D2327;
+}
+.inp{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ 

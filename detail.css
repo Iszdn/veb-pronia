@@ -1,0 +1,40 @@
+#detail{
+    padding: 70px 30px;
+}
+.details{
+    display: flex;
+    justify-content: center;
+gap: 20px;
+    /* flex-direction: column; */
+}
+.detail-image{
+    width: 39%;
+
+}
+img{
+    border-radius: 20px;
+}
+.contetn{
+    width: 60%;
+}
+.by-who{
+    color: #abd373;
+    padding-bottom: 20px;
+}
+.tittle-detail{
+    padding-bottom: 10px;
+}
+@media screen and (max-width:992px) {
+    .details{
+     
+        flex-direction: column;
+    } 
+    .detail-image{
+        width: 60%;
+    
+    }
+   
+    .contetn{
+        width: 90%;
+    }
+}

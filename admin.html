@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./admin.css">
+        <link rel="stylesheet" href="./layout.css">
+    <title>Admin</title>
+</head>
+<body>
+    <!-- navbar start -->
+<nav id="nav-admin">
+<ul>
+    <li>Bitkiler</li>
+    <li>Guller</li>
+    <li></li>
+</ul>
+</nav>
+<!-- main start  -->
+
+<main class="main-admin">
+
+    <div class="create-flower">
+   <a href="./create.html">    <button class="button-create">
+Create
+        </button></a>
+    </div>
+    <table>
+        <thead>
+          <tr>
+            <th>image</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Content</th>
+            <th>settings</th>
+            
+          </tr>
+        <thead>
+        <tbody>
+          <tr>
+            <td><img src="https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-3-270x300.jpg" alt=""></td>
+            <td>Black Eyed Susan</td>
+            <td>Office</td>
+            <td >
+                <p class="content-admin"> Lorem ipsum dolor sit amet, consectetur adipisic elit, sed do eiusmod tempo incid ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+               
+            </td>
+            <td>
+<div class="setting">
+    <i class="fa-regular fa-trash-can"></i>
+    <i class="fa-regular fa-pen-to-square"></i>
+</div>
+            </td>
+          </tr>
+          
+        </tbody>
+    </table>
+
+
+  <!-- Modal start -->
+<div id="editModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Edit Flower</h2>
+      <form id="editForm">
+        <label for="image">Image URL:</label>
+        <input type="file" id="image" name="image">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="category">Category:</label>
+        <input type="text" id="category" name="category">
+        <label for="content">Content:</label>
+        <textarea id="content" name="content"></textarea>
+        <button class="button-create save" type="submit">Save</button>
+      </form>
+    </div>
+  </div>
+  <!-- Modal end -->
+        
+</main>
+<!-- main end  -->
+    <!-- navbar end -->
+    <script src="./modal.js">
+
+    </script>
+</body>
+</html>

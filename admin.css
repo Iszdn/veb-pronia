@@ -1,0 +1,230 @@
+#nav-admin{
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    background-color: #1D2327;
+}
+.main-admin{
+    padding-left: 230px;
+    padding-top: 50px;
+}
+td img{
+    width: 100px;
+  }
+
+
+  
+  @media screen and (max-width: 35.5em) { 
+    table {
+      display: block;
+    
+    }
+  
+    table > *, 
+    table tr, 
+    table td, 
+    table th {
+      display: block;
+    }
+ 
+    table thead {
+      display: none;
+    }
+  
+    table tbody tr {
+      height: auto;
+      padding: 8px 0;
+    }
+  
+    table tbody tr td {
+      padding-left: 45%;
+      margin-bottom: 12px;
+    }
+  
+    table tbody tr td:last-child {
+      margin-bottom: 0;
+    }
+  
+    table tbody tr td:before {
+      position: absolute;
+      font-weight: 700;
+      width: 40%;
+      left: 10px;
+      top: 0;
+    }
+  
+    table tbody tr td:nth-child(1):before {
+      content: "Code";
+    }
+  
+    table tbody tr td:nth-child(2):before {
+      content: "Stock";
+    }
+  
+    table tbody tr td:nth-child(3):before {
+      content: "Cap";
+    }
+  
+    table tbody tr td:nth-child(4):before {
+      content: "Inch";
+    }
+  
+    table tbody tr td:nth-child(5):before {
+      content: "Box Type";
+    }
+  }
+ 
+  
+  /* Table style */
+  table {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-spacing: 1;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+   
+  }
+  
+  table * {
+    position: relative;
+  }
+  
+  
+  table td, 
+  table th {
+    padding-left: 8px;
+    max-width: 170px;
+    
+
+  }
+  table i{
+    cursor: pointer;
+  }
+  .setting{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-admin{
+    height: 70px;
+    overflow-y: scroll;
+  }
+  table thead tr {
+    height: 60px;
+    background: white;
+    border-bottom: 1px solid #1D2327 ;
+    font-size: 16px;
+  }
+  
+  table tbody tr {
+    height: 48px;
+    border-bottom: 1px solid #1D2327;
+  }
+  
+  table tbody tr:last-child {
+    border: 0;
+  }
+  
+  table td, 
+  table th {
+    text-align: left;
+  }
+  
+  table td.l, 
+  table th.l {
+    text-align: right;
+  }
+  
+  table td.c, 
+  table th.c {
+    text-align: center;
+  }
+  
+  table td.r, 
+  table th.r {
+    text-align: center;
+  }
+  
+  .button-create{
+    cursor: pointer;
+    margin-bottom: 100px;
+    width: 165px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    background-color: #1D2327;
+    color: #ffffff;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-radius: 23.5px;
+    transition: all 0.3s ease 0s;
+    outline: none;
+    border: none;
+}
+.button-create:hover{
+    background-color: #2a3941;
+}
+  
+ 
+  
+/* The Modal (background) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 30px auto; 
+    padding: 30px ;
+    border-radius: 10px;
+    border: 1px solid #888;
+    width: 50%; 
+ }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  input,textarea{
+    padding: 20px;
+    outline: none;
+border-radius: 10px;
+border: 1px solid gray;
+
+
+  }
+  .save{
+    margin-bottom: 0 ;
+  }
