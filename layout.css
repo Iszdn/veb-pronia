@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+img{
+    width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+
+  
+
+.breadcrumb {
+    height: 30vh;
+    width: 100%;
+    background-image: url(./assets/imgs/backcontact.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .breadcrumb .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .breadcrumb .content h2 {
+    text-transform: uppercase;
+    color: #525252;
+    font-size: 36px;
+  }
+  .breadcrumb p {
+    display: inline-block;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .breadcrumb p a {
+    position: relative;
+    padding-right: 15px;
+    transition: all 0.3s;
+  }
+  .breadcrumb p a::before {
+    background-color: #abd373;
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  .breadcrumb p a:hover {
+    color: #abd373;
+    transition: all 0.3s;
+  }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 200px;
+  color: black;
+  align-items: baseline;
+}
+.navbar .num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .num i {
+  background-color: #abd373;
+  border-radius: 10px;
+  color: #ffffff;
+  width: 44px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  display: block;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.navbar .num a {
+  font-size: 18px;
+}
+
+.navbar .num a:hover {
+  color: #abd373;
+}
+
+.info-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.navigation {
+  border-top: 1px solid rgb(219, 216, 216);
+}
+.mainUl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.mainLI {
+  color: #4c4c4c;
+  line-height: 50px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* navbar media start */
+@media screen and (max-width: 992px) {
+  .navbar {
+    padding: 30px 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar .num a {
+    font-size: 18px;
+  }
+  .navbar .num a:hover {
+    color: #abd373;
+  }
+  .info-icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 558px) {
+  .navigation {
+    display: none;
+  }
+  .navbar .num {
+    display: none;
+  }
+  .navbar {
+    padding: 30px;
+  }
+}
+/* footer css  */
+.footer-div {
+  padding: 70px;
+  background-image: url("https://htmldemo.net/pronia/pronia/assets/images/footer/bg/1-1920x465.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer-div .row-nav {
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer-div .pronia img {
+  padding-bottom: 35px;
+  width: 140px;
+}
+.footer-div .pronia p {
+  margin-bottom: 35px;
+  line-height: 27px;
+  color: #000000;
+}
+.footer-div .icon {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.footer-div .icon .ico {
+  border: 1px solid black;
+  transition: all 0.4s;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.footer-div .icon .ico:hover {
+  transition: all 0.4s;
+  background-color: #abd373;
+  border: 1px solid #abd373;
+  color: white;
+}
+
+.info h3 {
+  color: #000000;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+.info li {
+  padding-bottom: 10px;
+  transition: all 0.3s ease 0s;
+}
+.info li:hover {
+  color: #abd373;
+  transition: all 0.3s ease 0s;
+}
+
+
+
+.info1 h3 {
+  margin-bottom: 10px;
+  color: #000000;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+.info1 span {
+  color: #000000;
+  font-size: 24px;
+  line-height: 40px;
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.info1 span:hover {
+  color: #abd373;
+  transition: all 0.3s ease 0s;
+}
+.info1 p {
+  margin-bottom: 30px;
+  color: black;
+}
+
+.info1 img {
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.copyright {
+  border-top: 1px solid #a7cca2;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.copyright span {
+  color: #abd373;
+}
+.copyright i {
+  color: red;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-div {
+    padding: 50px;
+  }
+  .footer-div .row-nav {
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer-div {
+    padding: 20px;
+  }
+  .footer-div .row-nav {
+    flex-direction: column;
+    align-items: start;
+  }
+}

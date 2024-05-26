@@ -1,0 +1,174 @@
+.team-p {
+    margin-bottom: 0 !important;
+}
+.section-title{
+    padding-top: 20px;
+}
+.blogs{
+    display: flex;
+    padding: 80px 100px;
+    gap: 20px;
+    flex-wrap: wrap;
+    }
+.blog-item{
+    width: 30%;
+    background-color: #f6f7fb;
+    padding: 35px 30px 40px 30px;
+    border-radius: 10px;
+}
+.blog-content2{
+display: flex;
+flex-direction: column;
+
+}
+.image-client{
+    width: 77px;
+}
+
+.name-cl{
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+.client{
+    padding-bottom: 10px;
+}
+
+.item2{
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: relative;
+}
+.item2::before{
+    content: url("https://htmldemo.net/pronia/pronia/assets/images/testimonial/icon/quotation.png");
+    border-bottom-left-radius: 100%;
+    background-color: #abd373;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 125px;
+    height: 110px;
+    line-height: 110px;
+    text-align: center;
+    padding-left: 15px;
+    transition: all 0.3s ease 0s;
+}
+.our-client-say{
+    background-image: url("https://htmldemo.net/pronia/pronia/assets/images/testimonial/bg/1-1-1820x443.jpg");
+    background-repeat: no-repeat;
+    padding-top: 40px;
+}
+.item2:hover::before{
+    background-color: #525252;;  
+}
+.blog-meta{
+    color: #abd373;
+    text-transform: uppercase;
+}
+.blog-content .title{
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #525252;
+    margin-top: 20px;
+}
+.short-desc{
+    line-height: 30px;
+    margin-bottom: 45px;
+    
+}
+.blog-img{
+  border-radius: 10px;
+  overflow: hidden;
+}
+.blog-img img{
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+.blog-img img:hover{
+    transform: scale(1.1);
+    transition: all .5s ease-in-out;
+}
+#slider-section{
+    background-color: #F9EFE9;
+    padding: 30px 0;
+}
+#slider-section .container .row{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#slider-section .container .row .content span{
+font-size: 37px;
+text-transform: uppercase;
+}
+#slider-section .container .row .content h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: clamp(2.8125rem, 1.4732rem + 6.6964vw, 5.625rem);
+    margin-bottom: 15px;
+    }
+    .description{
+        text-transform: capitalize;
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 50px;
+    }
+    .btn{
+        display: inline-block;
+        justify-content: center;
+    padding: 20px 30px;
+    border-radius: 50px;
+        font-size: 16px;
+        background-color: #abd373;
+    border-color: #abd373;
+    color: #ffffff;
+    text-transform: uppercase;
+    overflow: hidden;
+
+    }
+    #green{
+        background-image: url("https://htmldemo.net/pronia/pronia/assets/images/brand/bg/1-1170x300.jpg") ;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 40px 0;
+        margin-bottom: 60px;
+    }
+   #green  .container  .row-green{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+   }
+
+  
+
+@media screen and (max-width:992px){
+    .blog-item{
+        width: 45%;
+        
+    }  
+}
+@media screen and (max-width:768px){
+    #slider-section .container .row {
+        flex-direction: column-reverse;
+
+    }
+    .blog-item{
+        width: 100%;
+        
+    }  
+    .blogs{
+        flex-direction: column;
+        }
+}
+@media screen and (max-width:468px){
+    .blog-item{
+        width: 100%;
+        
+    }  
+    .blogs{
+padding: 20px;
+    }
+}
+
